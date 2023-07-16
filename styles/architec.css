@@ -110,6 +110,54 @@ main{
     line-height: 26px; /* 162.5% */
 }
 
+/* features sections styles */
+    .section-title{
+        color: var(--dark-01, #131313);
+        font-family: Work Sans;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    } 
+    .bangladesh .section-title{
+        border-left: 5px solid #FF900E;
+        padding-left: 20px;
+    }
+
+    .bangladesh{
+        margin-top: 130px;
+        display: flex;
+        gap: 130px;
+    }
+    .feature-content .card{
+        padding: 30px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    }
+    .ten-years{
+        border-radius: 8px;
+        background: #FF900E;
+        color: #FFF;
+        width: 342px;
+        padding: 40px;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .ten-years h2{
+        font-size: 4rem;
+        margin: 0;
+    }
+    .ten-years p{
+        font-size: 1.5rem;
+    }
+    .feature-img img{
+        height: 90%;
+        margin-left: 90px;
+    }
 /* section 2 styls */
 .some{
     color: var(--dark-01, #131313);
@@ -165,9 +213,18 @@ main{
     .team-container,
     .Features,
     .facts-card-container,
-    .sponsor-image
+    .sponsor-image,
+    .bangladesh
      {
         flex-direction: column;
+    }
+    .feature-img img{
+       width: 90%;
+       margin-left: 0;
+    }
+    .ten-years{
+        max-width: 300px;
+        position: static;
     }
     .teams-images{
         grid-template-columns: 1fr;
